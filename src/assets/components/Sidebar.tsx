@@ -21,7 +21,7 @@ const Sidebar: React.FC<Props> = ({ currentStep }) => {
 
   return (
     <div
-      className='w-full md:h-[55ch] bg-cover bg-no-repeat p-4 min-h-[200px] md:h-[60ch] rounded-lg'
+      className='w-full md:h-[55ch] bg-cover bg-no-repeat p-4 min-h-[200px] md:h-[50ch] rounded-lg'
       style={{
         backgroundImage: `url("${isMobile ? mobileBg : desktopBg}")`
       }}
