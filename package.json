@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "tsx scripts/sync-version.ts",
     "build": "vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
