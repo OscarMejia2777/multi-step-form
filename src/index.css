@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Círculo activo: sin borde, fondo menta, número negro */
+.ant-steps-item-process .ant-steps-item-icon {
+  background-color: #92c0e3 !important; /* color menta */
+  border: none !important;               /* sin borde */
+  color: rgb(141, 104, 104) !important; /* número con color (o negro) */
+  font-weight: bold;
+}
+
+/* Número negro activo */
+.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon {
+  color: black !important;
+}
+
+/* Círculo no activo: fondo transparente, borde blanco, número blanco */
+.ant-steps-item-icon {
+  background-color: transparent !important;
+  border: 1px solid white !important; /* borde blanco */
+  color: white !important;             /* número blanco */
+}
+
+/* Número no activo */
+.ant-steps-item-icon > .ant-steps-icon {
+  color: white !important;
+}
+
+/* Ocultar solo el asterisco rojo en labels required */
+.ant-form-item-required::before { 
+  display: none !important;
+}
+
+/* Cambiar color del título del Step */
+.ant-steps-item-title {
+  color: #020e30 !important; /* Azul oscuro (Tailwind: blue-900) */
+  font-weight: bold;
+}
+
+/* Cambiar color de la descripción del Step */
+.ant-steps-item-description {
+  color: #b3bac8 !important; /* Gris suave (Tailwind: gray-400) */
+}
